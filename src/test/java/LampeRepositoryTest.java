@@ -52,6 +52,6 @@ public class LampeRepositoryTest {
     public void testAjouterLampeAuRepositoryException() {
         Lampe l3=new Lampe(UUID.randomUUID().toString(), "Cuisine", EtatLampe.OFF);       
         repo.ajouterLampe(l3);
-        repo.ajouterLampe(l3);
+       // repo.ajouterLampe(l3);
     }    
 }
