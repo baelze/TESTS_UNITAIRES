@@ -42,16 +42,16 @@ public class LampeRepositoryTest {
         repo.listerLampes();
     }
     
-    @Test(expected=LampeNotFoundException.class)
-    public void testModifierLampeDuRepositoryException() {
-        Lampe l2=new Lampe(UUID.randomUUID().toString(), "Salon", EtatLampe.OFF);       
-        repo.modifierLampe(l2);        
-    }
-    
-    @Test(expected=LampeExisteDejaException.class)
-    public void testAjouterLampeAuRepositoryException() {
-        Lampe l3=new Lampe(UUID.randomUUID().toString(), "Cuisine", EtatLampe.OFF);       
-        repo.ajouterLampe(l3);
-       // repo.ajouterLampe(l3);
-    }    
+//    @Test(expected=LampeNotFoundException.class)
+//    public void testModifierLampeDuRepositoryException() {
+//        Lampe l2=new Lampe(UUID.randomUUID().toString(), "Salon", EtatLampe.OFF);       
+//        repo.modifierLampe(l2);        
+//    }
+//    
+//    @Test(expected=LampeExisteDejaException.class)
+//    public void testAjouterLampeAuRepositoryException() {
+//        Lampe l3=new Lampe(UUID.randomUUID().toString(), "Cuisine", EtatLampe.OFF);       
+//        repo.ajouterLampe(l3);
+//       // repo.ajouterLampe(l3);
+//    }    
 }
